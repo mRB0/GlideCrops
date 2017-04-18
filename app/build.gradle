@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.mrb0.glidecrops"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+repositories {
+    jcenter()
+    maven {
+        name 'glide-snapshot'
+        url 'http://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}
